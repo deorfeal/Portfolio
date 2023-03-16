@@ -11,42 +11,42 @@
 
 <body>
 	<header class="header">
-		<h1 class="header__title">
+		<h1 class="header__title" data-aos="fade-right">
 		Разработка сайта для промышленных альпинистов
 		</h1>
-		<p class="header__desc">
+		<p class="header__desc" data-aos="fade-right">
 			<span>
 				Описание:
 			</span>
 			Разработка многостраничного адаптивного сайта для промышленных альпинистов, с плавными hover эффектами и анимациями некоторых элементов.
 		</p>
-		<p class="header__text">
+		<p class="header__text" data-aos="fade-right">
 			Ниже приведены ссылки на страницы проекта. Для просмотра просто перейдите по названию страницы. Для вашего
 			удобства она открывается в новом окне.
 		</p>
 	</header>
 	<main class="main">
-		<p class="main__text">
+		<p class="main__text" data-aos="fade-right">
 			Страницы:
 		</p>
 		<ol class="main__list">
-			<li class="main__list-item"><a class="main__list-link" target="_blank"
+			<li class="main__list-item" data-aos="fade-right"><a class="main__list-link" target="_blank"
 					href="https://deorfeal.github.io/Alpinism">Home</a>
 			</li>
-			<li class="main__list-item"><a class="main__list-link" target="_blank"
+			<li class="main__list-item" data-aos="fade-right"><a class="main__list-link" target="_blank"
 					href="https://deorfeal.github.io/Alpinism/services.html">Services</a>
 			</li>
-			<li class="main__list-item"><a class="main__list-link" target="_blank"
+			<li class="main__list-item" data-aos="fade-right"><a class="main__list-link" target="_blank"
 					href="https://deorfeal.github.io/Alpinism/services-2.html">Services two</a>
 			</li>
 		</ol>
 	</main>
 	<footer class="footer">
 		<div class="footer__box footer-box">
-			<p class="footer-box__text">
+			<p class="footer-box__text" data-aos="fade-right">
 				Технологии которые использовались для данного проекта:
 			</p>
-			<ul class="footer-box__list">
+			<ul class="footer-box__list" data-aos="fade-right">
 				<li class="footer-box__list-item">
 					Js ( Es 6 )
 				</li>
@@ -83,7 +83,7 @@
 				</li>
 			</ul>
 		</div>
-		<p class="footer__thanks">
+		<p class="footer__thanks" data-aos="fade-right">
 			Спасибо за внимание и интерес к моей работе! С уважением, Михаил.
 		</p>
 	</footer>
@@ -384,5 +384,22 @@
 		}
 	}
 </style>
+	
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script>
+	jQuery(document).ready(function () {
+    (function () {
+        // your page initialization code here
+        // the DOM will be available here
+        AOS.init({
+            duration: 750,
+            offset: 0, // offset (in px) from the original trigger point
+            once: true, // whether animation should happen only once - while scrolling down
+            anchorPlacement: 'top-bottom', // define where the AOS animations will be triggered
+        });
+    })();
+});
+</script>
 
 </html>
